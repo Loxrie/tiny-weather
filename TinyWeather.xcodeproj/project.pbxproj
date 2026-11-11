@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04F872AF30A53703007EE70C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 04F872AE30A53703007EE70C /* RxBlocking */; };
+		04F872B130A53703007EE70C /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 04F872B030A53703007EE70C /* RxBlocking-Dynamic */; };
+		04F872B330A53703007EE70C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 04F872B230A53703007EE70C /* RxCocoa */; };
+		04F872B530A53703007EE70C /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 04F872B430A53703007EE70C /* RxCocoa-Dynamic */; };
+		04F872B730A53703007EE70C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 04F872B630A53703007EE70C /* RxRelay */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		04F8729F30A5327E007EE70C /* TinyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F872B730A53703007EE70C /* RxRelay in Frameworks */,
+				04F872B530A53703007EE70C /* RxCocoa-Dynamic in Frameworks */,
+				04F872B330A53703007EE70C /* RxCocoa in Frameworks */,
+				04F872AF30A53703007EE70C /* RxBlocking in Frameworks */,
+				04F872B130A53703007EE70C /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = TinyWeather;
 			packageProductDependencies = (
+				04F872AE30A53703007EE70C /* RxBlocking */,
+				04F872B030A53703007EE70C /* RxBlocking-Dynamic */,
+				04F872B230A53703007EE70C /* RxCocoa */,
+				04F872B430A53703007EE70C /* RxCocoa-Dynamic */,
+				04F872B630A53703007EE70C /* RxRelay */,
 			);
 			productName = TinyWeather;
 			productReference = 04F8729F30A5327E007EE70C /* TinyWeather.app */;
@@ -94,6 +112,9 @@
 			);
 			mainGroup = 04F8729630A5327E007EE70C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04F872A030A5327E007EE70C /* Products */;
 			projectDirPath = "";
@@ -250,6 +271,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -270,13 +292,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
@@ -292,6 +315,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,13 +336,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
@@ -345,6 +370,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04F872AE30A53703007EE70C /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		04F872B030A53703007EE70C /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		04F872B230A53703007EE70C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		04F872B430A53703007EE70C /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		04F872B630A53703007EE70C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F872AD30A53703007EE70C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04F8729730A5327E007EE70C /* Project object */;
 }
