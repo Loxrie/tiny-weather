@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		04F8729F30A5327E007EE70C /* TinyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F872C030A66649007EE70C /* SwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SwiftPlayground.playground; path = ../SwiftPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +46,7 @@
 		04F8729630A5327E007EE70C = {
 			isa = PBXGroup;
 			children = (
+				04F872C030A66649007EE70C /* SwiftPlayground.playground */,
 				04F872A130A5327E007EE70C /* TinyWeather */,
 				04F872A030A5327E007EE70C /* Products */,
 			);
