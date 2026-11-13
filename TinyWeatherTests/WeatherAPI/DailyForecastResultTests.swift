@@ -24,5 +24,4 @@ struct DailyForecastResultTests {
             #expect(result.pollenIndexText[5] == nil)
         }
     }
-
 }

@@ -67,5 +67,5 @@ let testSummary = """
     ],
     "windDirection": ["SE", "NW", "E", "E", "S", "S", "SW", "W", "SW", "W", "W", "W", "SW", "SW"],
     "windSpeedMph": [4, 5, 15, 12, 9, 11, 15, 15, 13, 12, 11, 11, 11, 11]
-  }
+}
 """
